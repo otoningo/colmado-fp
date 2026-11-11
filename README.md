@@ -4,7 +4,10 @@ Evaluación 06 de Fundamentos de Programación (TDS-002), ITLA.
 
 ## Integrantes
 
+- Darieli Alexandra Báez Rosario - 2026-0700
+- Jade Mariel Mateo Báez - 2026-0706
 - Joycel Otoniel Pérez Nieves - 2026-0703
+- Miguel Angel Polonia Paredes - 2026-0719
 
 ## Descripción
 
