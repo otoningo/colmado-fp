@@ -91,7 +91,12 @@ namespace Colmado
                             cantidadArticulos = 0;
                         }
                         break;
-
+                     case 5:
+                        // borra todo lo que se había agregado a la compra
+                        subtotal = 0;
+                        cantidadArticulos = 0;
+                        Console.WriteLine("Compra cancelada.");
+                        break;
                     case 0:
                         Console.WriteLine("Saliendo del sistema...");
                         break;
@@ -112,6 +117,7 @@ namespace Colmado
             Console.WriteLine("2. Agregar a la compra");
             Console.WriteLine("3. Ver factura");
             Console.WriteLine("4. Pagar");
+            Console.WriteLine("5. Cancelar compra");
             Console.WriteLine("0. Salir");
         }
 
