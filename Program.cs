@@ -97,6 +97,18 @@ namespace Colmado
                         cantidadArticulos = 0;
                         Console.WriteLine("Compra cancelada.");
                         break;
+                    case 6:
+                        int codigoBuscar = LeerEntero("Código del producto: ");
+                        // si el precio es 0 es porque el código no existe
+                        if (ObtenerPrecio(codigoBuscar) == 0)
+                        {
+                            Console.WriteLine("Ese código no existe.");
+                        }
+                        else
+                        {
+                            Console.WriteLine($"{ObtenerNombre(codigoBuscar)} cuesta RD${ObtenerPrecio(codigoBuscar):N2}");
+                        }
+                        break;
                     case 0:
                         Console.WriteLine("Saliendo del sistema...");
                         break;
@@ -118,6 +130,7 @@ namespace Colmado
             Console.WriteLine("3. Ver factura");
             Console.WriteLine("4. Pagar");
             Console.WriteLine("5. Cancelar compra");
+            Console.WriteLine("6. Consultar precio");
             Console.WriteLine("0. Salir");
         }
 
